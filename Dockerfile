@@ -18,7 +18,7 @@ RUN mvn -f /app/pom.xml clean package
 FROM alpine:3.13
 
 ENV MYSQL_HOST 127.0.0.1
-ENV MYSQL_USERNAME root
+ENV MYSQL_USER_NAME root
 ENV MYSQL_PASSWORD 190825mjl.
 ENV MYSQL_DATABASE aisar_music
 # 安装依赖包，如需其他依赖包，请到alpine依赖包管理(https://pkgs.alpinelinux.org/packages?name=php8*imagick*&branch=v3.13)查找。
