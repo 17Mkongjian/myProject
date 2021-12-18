@@ -17,7 +17,7 @@ RUN mvn -f /app/pom.xml clean package
 # 选择运行时基础镜像
 FROM alpine:3.13
 
-ENV MYSQL_HOST 127.0.0.1
+ENV MYSQL_HOST 10.0.224.7
 ENV MYSQL_USER_NAME root
 ENV MYSQL_PASSWORD 190825mjl.
 ENV MYSQL_DATABASE aisar_music
